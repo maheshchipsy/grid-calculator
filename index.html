@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Grid</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Grid Layout</h1>
+        <form id="gridForm">
+            <label for="maxWidth">Max Width (px):</label>
+            <input type="number" id="maxWidth" value="1440" required>
+            
+            <label for="columns">Columns:</label>
+            <input type="number" id="columns" value="4" required>
+            
+            <label for="gutterWidth">Gutter Width (px):</label>
+            <input type="number" id="gutterWidth" value="18" required>
+            
+            <label for="marginWidth">Margin Width (px):</label>
+            <input type="number" id="marginWidth" value="135" required>
+            
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="results">
+            <p><strong>Page width:</strong> <span id="pageWidth">1440</span> px</p>
+            <p><strong>Column width:</strong> <span id="columnWidth">279</span> px</p>
+        </div>
+
+        <div class="grid-preview"></div>
+    </div>
+</body>
+</html>
